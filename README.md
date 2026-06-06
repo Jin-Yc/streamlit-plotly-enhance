@@ -15,13 +15,15 @@ types that need highly specialized handling may be refined in later versions.
 
 ## Installation
 
-From PyPI, after the package is published:
+Install from PyPI:
 
 ```bash
 pip install streamlit-plotly-enhance
 ```
 
-From GitHub:
+PyPI project page: https://pypi.org/project/streamlit-plotly-enhance/
+
+You can also install the latest source from GitHub:
 
 ```bash
 pip install git+https://github.com/Jin-Yc/streamlit-plotly-enhance.git
