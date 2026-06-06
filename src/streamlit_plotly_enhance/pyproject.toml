@@ -1,0 +1,7 @@
+[project]
+name = "streamlit-plotly-enhance"
+version = "0.1.0"
+
+[[tool.streamlit.component.components]]
+name = "plotly_cell_events"
+asset_dir = "frontend/build"

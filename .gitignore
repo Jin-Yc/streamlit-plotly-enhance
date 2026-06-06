@@ -1,0 +1,12 @@
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.tmp/
+.downloads/
+*.egg-info/
+dist/
+build/
+node_modules/
+!src/streamlit_plotly_enhance/frontend/build/
+!src/streamlit_plotly_enhance/frontend/build/*
