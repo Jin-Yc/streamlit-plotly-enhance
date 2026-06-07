@@ -56,8 +56,16 @@ st.json(event or {})
 Run the example:
 
 ```bash
-streamlit run examples/heatmap_basic.py
+streamlit run examples/readme_demo.py
 ```
+
+## Demo
+
+The README demo compares native Streamlit Plotly rendering with the enhanced
+component. Click a heatmap cell in the enhanced component to get a normalized
+event payload.
+
+![Heatmap click event demo](docs/screenshots/readme-heatmap-click.png)
 
 ## Event Payload
 
@@ -124,26 +132,25 @@ Primary V1 chart targets:
 
 `selected` and `selecting` are not V1 guarantees.
 
-## Development
+## Test Examples
 
-Create a local environment:
+The `examples/` folder contains small Streamlit apps for the V1 chart targets:
+
+- `examples/readme_demo.py`
+- `examples/heatmap_basic.py`
+- `examples/imshow_basic.py`
+- `examples/image_basic.py`
+- `examples/contour_basic.py`
+- `examples/histogram2d_basic.py`
+
+Run any example with Streamlit:
 
 ```bash
-python -m venv .venv
-.\.venv\Scripts\python.exe -m pip install -e ".[dev]"
-.\.venv\Scripts\python.exe -m pytest
+streamlit run examples/heatmap_basic.py
 ```
 
-Build the frontend:
-
-```bash
-cd src/streamlit_plotly_enhance/frontend
-npm install
-npm run build
-```
-
-The generated `src/streamlit_plotly_enhance/frontend/build` files are included
-in the Python package so users do not need Node.js at runtime.
+Click or hover on the chart, depending on the enabled events in the example,
+and inspect the `st.json` payload below the chart.
 
 ## License
 
